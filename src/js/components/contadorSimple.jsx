@@ -1,5 +1,5 @@
 import React from "react";
- export const contadorSimple = ({number}) => <div className="digit">{number}</div>
+ export const ContadorSimple = ({number}) => <div className="digit">{number}</div>
 
 	
 

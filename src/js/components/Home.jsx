@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { contadorSimple } from "./contadorSimple.jsx";
+import { ContadorSimple } from "./contadorSimple.jsx";
 
 //create your first component
 const Home = () => {
@@ -18,13 +18,13 @@ const Home = () => {
 	return (
 		<main className="text-center">
 			<section className="counter-holder">
-				<contadorSimple number={<span className="fa-regular fa-clock"></span>} />
-				<contadorSimple number={Math.floor(timer / 100000) % 10} />
-				<contadorSimple number={Math.floor(timer / 10000) % 10} />
-				<contadorSimple number={Math.floor(timer / 1000) % 10} />
-				<contadorSimple number={Math.floor(timer / 100) % 10} />
-				<contadorSimple number={Math.floor(timer / 10) % 10} />
-				<contadorSimple number={Math.floor(timer % 10)} />
+				<ContadorSimple number={<span className="fa-regular fa-clock"></span>} />
+				<ContadorSimple number={Math.floor(timer / 100000) % 10} />
+				<ContadorSimple number={Math.floor(timer / 10000) % 10} />
+				<ContadorSimple number={Math.floor(timer / 1000) % 10} />
+				<ContadorSimple number={Math.floor(timer / 100) % 10} />
+				<ContadorSimple number={Math.floor(timer / 10) % 10} />
+				<ContadorSimple number={Math.floor(timer % 10)} />
 			</section>
 		</main>
 	);
